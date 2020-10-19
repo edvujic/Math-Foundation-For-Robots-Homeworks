@@ -10,7 +10,7 @@ equation2 = sym(log(1 + exp(4)) - log(1 + exp(3)))
 vpa(equation2)
 
 matrisin ortogonal olup olmadığına bakınız.
-% if a matris is orthogonal that means that D^-1 = D'
+% if a matrix is orthogonal that means that D^-1 = D'
 D = sym([ 1/sqrt(2) 1/sqrt(2) ; 1/sqrt(2) -(1/sqrt(2))])
 if isequal(D', inv(D))
     disp("Matrix Orthogonal!")
