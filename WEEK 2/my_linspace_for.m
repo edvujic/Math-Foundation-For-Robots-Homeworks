@@ -30,5 +30,8 @@ n = 100;
             for j = 1:n
                 outputMatrix(j) = x1 + incremention;
                 incremention = incremention + (x2 - x1)/(n - 1);
-            end   
+            end
+         otherwise
+             msg = "Invalid usage, use my_linspace_for(x1, x2, n) or my_lispace_for(x1, x2) for n = 100";
+             error(msg)
 end
