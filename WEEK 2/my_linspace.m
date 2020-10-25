@@ -17,5 +17,8 @@ function [outputArg] = my_linspace(x1,x2,num_el)
         case 3
             incrementation = (x2 - x1)/(num_el - 1);
             outputArg = x1: incrementation: x2;
+        otherwise
+             msg = "Invalid usage, use my_linspace_for(x1, x2, n) or my_lispace_for(x1, x2) for n = 100";
+             error(msg)
 
 end
